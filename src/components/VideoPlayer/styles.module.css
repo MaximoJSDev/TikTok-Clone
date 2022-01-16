@@ -18,3 +18,19 @@
   margin: auto;
   border: none;
 }
+
+.hidden {
+  opacity: 0;
+}
+.actions {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+}
+.action {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
