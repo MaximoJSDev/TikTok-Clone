@@ -4,12 +4,13 @@
   text-align: center;
   display: grid;
   place-content: center;
+  overflow: hidden;
 }
 main {
-  border: 1px solid #fff;
   aspect-ratio: 9/16;
   overflow-y: scroll;
   border-radius: 3px;
   max-width: 375px;
   width: 100vw;
+  scroll-snap-type: y mandatory;
 }
