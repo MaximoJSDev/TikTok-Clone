@@ -24,13 +24,23 @@
 }
 .actions {
   position: absolute;
+  right: 8px;
   bottom: 122px;
-  right: 16px;
-}
-.action {
-  color: #fff;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.action {
+  color: #fff;
+  background: transparent;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 15px;
+  text-align: center;
   align-items: center;
 }
