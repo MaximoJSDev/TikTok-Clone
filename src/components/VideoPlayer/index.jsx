@@ -5,7 +5,9 @@ import styles from './styles.module.css'
 import clsx from 'clsx'
 import useIntersectionVideoPlayer from '../../hooks/useIntersectionVideoPlayer.js'
 
-export default function VideoPlayer ({ src, username, avatar, description, albumCover, songTitle }) {
+export default function VideoPlayer ({
+  src, username, avatar, description, albumCover, songTitle, likes, comments, shares
+}) {
   const video = useRef(null)
   const { playing, handlePlay } = useIntersectionVideoPlayer({ video })
 
@@ -23,7 +25,13 @@ export default function VideoPlayer ({ src, username, avatar, description, album
         src={src}
       />
       <button onClick={handlePlay} className={playerClassName} />
-      <VideoPlayerActions username={username} avatar={avatar} />
+      <VideoPlayerActions
+        username={username}
+        avatar={avatar}
+        likes={likes}
+        comments={comments}
+        shares={shares}
+      />
       <VideoDescription
         username={username}
         description={description}
