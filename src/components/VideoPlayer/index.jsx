@@ -4,7 +4,7 @@ import VideoDescription from './VideoDescription/index.jsx'
 import styles from './styles.module.css'
 import clsx from 'clsx'
 
-export default function VideoPlayer ({ src, author, description, albumCover, songTitle }) {
+export default function VideoPlayer ({ src, username, description, albumCover, songTitle }) {
   const [playing, setPlaying] = useState(false)
   const video = useRef(null)
 
@@ -33,7 +33,7 @@ export default function VideoPlayer ({ src, author, description, albumCover, son
       <button onClick={handlePlay} className={playerClassName} />
       <VideoPlayerActions />
       <VideoDescription
-        author={author}
+        username={username}
         description={description}
         albumCover={albumCover}
         songTitle={songTitle}
