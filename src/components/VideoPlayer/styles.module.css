@@ -62,9 +62,8 @@
   height: 49px;
   width: 49px;
   border-radius: 50%;
-  box-shadow:
-  0px 0px 20px rgba(0, 0, 0, 0.2)
-;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
 }
 .user img:last-child {
   margin-top: -13px;
