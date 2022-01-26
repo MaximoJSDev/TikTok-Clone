@@ -29,7 +29,7 @@
 }
 .album {
   animation: rotate 6s infinite linear;
-  background-image: url('assets/album.svg');
+  background-image: url('/album.svg');
   width: 48px;
   height: 48px;
   display: flex;
